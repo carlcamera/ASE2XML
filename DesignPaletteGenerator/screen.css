@@ -1,0 +1,67 @@
+﻿body
+{
+  background: #2e2b2a url(images/blackglow.jpg) 50% 0 no-repeat;
+}
+
+h1,h2,h3,h4,h5,h6,input,body
+{
+  color: #ededed; 
+
+}
+
+em
+{
+  color: #ec9;
+  background-color: transparent;
+}
+
+
+.container
+{
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1
+{
+  margin: 2em 0 3em 0;
+}
+
+h1 span
+{
+  display:block;
+  font-size: 50%;
+}
+
+.warnmsg
+{
+	color: #CE9731;
+}
+
+.trademark
+{
+  display:inline;
+  font-size: 60%;
+  vertical-align: top;
+}
+
+#asefile
+{
+  background-color: #2e2b2a;
+}
+
+#filesubmit
+{
+  color: #212121;
+  display: block;
+  margin-top: 1em;
+  width: 12em;
+  margin: 4em auto;
+}
+
+#partingcomments
+{
+  margin-top: 60px;
+  font-size: 82.5%;
+  text-align: left;
+}
