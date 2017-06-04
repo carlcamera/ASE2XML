@@ -1,17 +1,34 @@
 ﻿body {
+    font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6, input, body {
+.formwrap {
+    margin: 0 auto;
+    max-width: 800px;
 }
 
 h1 {
-    margin: 2em 0 3em 0;
+    font-family: Khand;
+    font-size: 44px;
+    letter-spacing: -0.03em;
+    margin: 2em 0 1em 0;
 }
 
     h1 span {
         display: block;
-        font-size: 50%;
+        font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 40%;
     }
+
+h2 {
+    border-bottom: 1px solid #eee;
+    font-family: Khand;
+    margin: 2em 0 0 0;
+    padding: 0;
+    text-transform: uppercase;
+}
 
 .warnmsg {
     color: #c25e1c;
@@ -23,23 +40,13 @@ h1 {
     vertical-align: top;
 }
 
-.swatches {
-    display: flex;
+#theform {
+    margin-bottom: 2rem;
 }
 
-.colorcol {
-    width: 100%;
-}
-    .colorcol p {
-        text-transform: capitalize;
-    }
-    .colorcol .hexval {
-        text-transform: lowercase;
-    }
-
-.sampleswatch {
-    display: block;
-    min-height: 10vh;
+#asefile,
+#filesubmit {
+    font-size: 19px;
 }
 
 #filesubmit {
@@ -47,8 +54,35 @@ h1 {
     display: block;
 }
 
+.swatches {
+    display: flex;
+}
+
+.colorcol {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+    .colorcol p {
+        text-transform: capitalize;
+    }
+
+    .colorcol .hexval {
+        text-transform: lowercase;
+    }
+
+.swatchname {
+    color: #999;
+    font-size: 90%;
+}
+
+.sampleswatch {
+    display: block;
+    min-height: 10vh;
+}
+
 #partingcomments {
-    margin-top: 60px;
     font-size: 82.5%;
     text-align: left;
 }
