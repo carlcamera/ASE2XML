@@ -11,6 +11,6 @@ published my online swatch conversion tool now hosted at:
 
 http://carl.camera/sandbox/aseconvert
 
-In 2015, I open-sourced the app as ASE2XML on Git.
+In 2015, I open-sourced the app as ASE2XML on GitHub.
 
 
