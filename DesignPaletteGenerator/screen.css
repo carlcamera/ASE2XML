@@ -1,17 +1,14 @@
 ﻿body
 {
-  background: #2e2b2a url(images/blackglow.jpg) 50% 0 no-repeat;
 }
 
 h1,h2,h3,h4,h5,h6,input,body
 {
-  color: #ededed; 
 
 }
 
 em
 {
-  color: #ec9;
   background-color: transparent;
 }
 
@@ -47,12 +44,10 @@ h1 span
 
 #asefile
 {
-  background-color: #2e2b2a;
 }
 
 #filesubmit
 {
-  color: #212121;
   display: block;
   margin-top: 1em;
   width: 12em;
