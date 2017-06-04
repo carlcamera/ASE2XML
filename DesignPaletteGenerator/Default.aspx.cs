@@ -26,7 +26,7 @@ namespace DesignPaletteGenerator
                 {
                     colorlist.DataSource = swch.colors;
                     colorlist.DataBind();
-                    WritePalette(swch);
+                    //WritePalette(swch);
                     // does not return
                 }
                 else
