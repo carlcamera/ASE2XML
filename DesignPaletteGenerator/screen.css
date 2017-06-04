@@ -23,7 +23,23 @@ h1 {
     vertical-align: top;
 }
 
-#asefile {
+.swatches {
+    display: flex;
+}
+
+.colorcol {
+    width: 100%;
+}
+    .colorcol p {
+        text-transform: capitalize;
+    }
+    .colorcol .hexval {
+        text-transform: lowercase;
+    }
+
+.sampleswatch {
+    display: block;
+    min-height: 10vh;
 }
 
 #filesubmit {

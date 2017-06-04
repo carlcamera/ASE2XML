@@ -17,7 +17,8 @@
             <h1 id="siteheading">ASE to Expression<span class="trademark">®</span> Converter <span>Converts Adobe<span class="trademark">®</span> ASE Palette files to Expression<span class="trademark">®</span> Palette files.</span></h1>
         </header>
         <p class="warnmsg">
-            <asp:Literal ID="usermsg" runat="server"></asp:Literal></p>
+            <asp:Literal ID="usermsg" runat="server"></asp:Literal>
+        </p>
         <div id="theform">
             <form id="form1" runat="server">
                 <div>
@@ -25,15 +26,24 @@
                 </div>
                 <div>
                     <input id="asefile" type="file" runat="server" />
-                    <input id="filesubmit" type="button" value="Convert" onserverclick="button_upload" runat="server" />
+                    <input id="filesubmit" type="button" value="Convert" onserverclick="ButtonUpload" runat="server" />
                 </div>
             </form>
         </div>
     </div>
     <div class="swatches">
-        <asp:Repeater ID="swatchlist" runat="server">
+        <asp:Repeater ID="colorlist" runat="server">
             <ItemTemplate>
-                <p>swatch item</p>
+                <div class="colorcol">
+                    <p>
+                        <asp:Label runat="server" ID="Label1" Text='<%# Eval("name") %>' /></p>
+                    <span
+                        class="sampleswatch"
+                        style="background-color:#<%# Eval("hexcolor") %>"></span>
+                    <p class="hexval">
+                        #<%# Eval("hexcolor") %>
+                    </p>
+                </div>
             </ItemTemplate>
         </asp:Repeater>
     </div>

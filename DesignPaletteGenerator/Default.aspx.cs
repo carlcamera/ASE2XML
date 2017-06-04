@@ -15,7 +15,7 @@ namespace DesignPaletteGenerator
 
         }
 
-        protected void button_upload(object sender, EventArgs e)
+        protected void ButtonUpload(object sender, EventArgs e)
         {
             List<Byte> filebytes = SwatchBytes();
 
@@ -24,6 +24,8 @@ namespace DesignPaletteGenerator
                 Palette swch = new Palette(filebytes);
                 if (swch.colors != null)
                 {
+                    colorlist.DataSource = swch.colors;
+                    colorlist.DataBind();
                     WritePalette(swch);
                     // does not return
                 }
@@ -105,7 +107,7 @@ namespace DesignPaletteGenerator
                     xe.Attributes.Append(xa);
                 }
                 xa = xd.CreateAttribute("Color");
-                xa.Value = "#" + n.rgbcolor().ToUpper();
+                xa.Value = "#" + n.argbcolor().ToUpper();
                 xe.Attributes.Append(xa);
                 root.AppendChild(xe);
             }
@@ -382,7 +384,15 @@ namespace DesignPaletteGenerator
             }
         }
 
-        public string rgbcolor()
+        public string hexcolor
+        {
+            get
+            {
+                return argbcolor().Substring(2);
+            }
+        }
+
+        public string argbcolor()
         {
             StringBuilder hexstr = new StringBuilder("ff"); // Force 100% Alpha value
 
