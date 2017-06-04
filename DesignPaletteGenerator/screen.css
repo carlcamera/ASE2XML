@@ -1,62 +1,38 @@
-﻿body
-{
+﻿body {
 }
 
-h1,h2,h3,h4,h5,h6,input,body
-{
-
+h1, h2, h3, h4, h5, h6, input, body {
 }
 
-em
-{
-  background-color: transparent;
+h1 {
+    margin: 2em 0 3em 0;
 }
 
+    h1 span {
+        display: block;
+        font-size: 50%;
+    }
 
-.container
-{
-  margin: 0 auto;
-  text-align: center;
+.warnmsg {
+    color: #c25e1c;
 }
 
-h1
-{
-  margin: 2em 0 3em 0;
+.trademark {
+    display: inline;
+    font-size: 60%;
+    vertical-align: top;
 }
 
-h1 span
-{
-  display:block;
-  font-size: 50%;
+#asefile {
 }
 
-.warnmsg
-{
-	color: #CE9731;
+#filesubmit {
+    margin-top: 1rem;
+    display: block;
 }
 
-.trademark
-{
-  display:inline;
-  font-size: 60%;
-  vertical-align: top;
-}
-
-#asefile
-{
-}
-
-#filesubmit
-{
-  display: block;
-  margin-top: 1em;
-  width: 12em;
-  margin: 4em auto;
-}
-
-#partingcomments
-{
-  margin-top: 60px;
-  font-size: 82.5%;
-  text-align: left;
+#partingcomments {
+    margin-top: 60px;
+    font-size: 82.5%;
+    text-align: left;
 }

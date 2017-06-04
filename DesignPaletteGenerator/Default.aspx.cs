@@ -37,7 +37,6 @@ namespace DesignPaletteGenerator
             {
                 // null or no file
                 usermsg.Text = "Please upload a valid ASE palette file.";
-
             }
         }
 
@@ -58,9 +57,9 @@ namespace DesignPaletteGenerator
             catch (EndOfStreamException)
             {
             }
-            catch (IOException ioex)
+            catch (IOException)
             {
-                throw (ioex);
+                throw;
             }
             finally
             {
