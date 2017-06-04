@@ -24,6 +24,7 @@ namespace DesignPaletteGenerator
                 Palette swch = new Palette(filebytes);
                 if (swch.colors != null)
                 {
+                    usermsg.Text = "";
                     colorlist.DataSource = swch.colors;
                     colorlist.DataBind();
                     Pname.Text = swch.name;
